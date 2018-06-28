@@ -1,0 +1,34 @@
+
+
+{% extends "base.html" %}
+
+
+{%block head %}
+{{instance.title}} | {{block.super}}
+{% endblock head %}
+
+
+<style>
+    {% block style %}
+
+    h1{
+        color:#777777;
+}
+
+
+
+    {% endblock style %}
+    </style>
+
+
+{%block content %}
+<h1>{{title}}</h1>
+
+{{instance.title}}<br/>
+{{instance.content}}<br/>
+{{instance.timestamped}}<br/>
+{{instance.updated}}<br/>
+{{instance.id}}<br/>
+
+{% endblock content %}
+
